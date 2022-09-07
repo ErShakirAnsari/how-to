@@ -14,6 +14,7 @@ You can also clone, edit and submit the Jira ticket I created - [OSSRH-83824](ht
 
 First thing first, you need to install a gpg tool to sing your artifacts,
 you can download this tool from [gnupg.org](https://gnupg.org/download/index.html)
+or use my [offline copy](./binaries/gpg4win-4.0.3.exe)
 
 Once installation is complete, open your terminal and follow below commands
 
