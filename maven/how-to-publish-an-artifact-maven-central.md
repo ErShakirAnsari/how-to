@@ -1,8 +1,8 @@
 # How to publish an artifact maven central
 
 > Prerequisite
->> - GitHub account
->> - Maven project
+> - GitHub account
+> - Maven project
 
 ## 1) Create a project and request access to maven central.
 
@@ -113,7 +113,6 @@ gpg --list-keys
 ```
 
 ```
-
 C:\Users>gpg --list-keys
 gpg: checking the trustdb
 gpg: marginals needed: 3  completes needed: 1  trust model: pgp
@@ -141,7 +140,7 @@ You can read more detailed instructions on [the sonatype page on pgp signatures]
 
 ### 2.3) Export private key
 
-👉 We to add private key to GitHub to work with github-actions, if you're not planning to use gh-action you can skip this step.
+💡 We to add private key to GitHub to work with github-actions, if you're not planning to use gh-action you can skip this step.
 
 ```
 gpg --export-secret-keys -a 7W1S1S7SDSSS73S4DDFD4D5DCD7D2D8D3DDC5D2D > file-name.txt
@@ -149,7 +148,8 @@ gpg --export-secret-keys -a 7W1S1S7SDSSS73S4DDFD4D5DCD7D2D8D3DDC5D2D > file-name
 
 ## 3 Changes in pom.xml
 
-### 3.1) You need to add a few plugins as mention below:
+### 3.1) Plugins
+You need to add a few plugins as mention below:
 
 ```
 <!--maven-gpg-plugin-->
@@ -237,8 +237,8 @@ gpg --export-secret-keys -a 7W1S1S7SDSSS73S4DDFD4D5DCD7D2D8D3DDC5D2D > file-name
 </plugin>
 ```
 
-### 3.2) You need to some metadata
-You can read more here [sonatype requirements](https://central.sonatype.org/publish/requirements/)
+### 3.2) Metadata
+You need to some metadata. You can read more here [sonatype requirements](https://central.sonatype.org/publish/requirements/)
 
 ```
 <project>
