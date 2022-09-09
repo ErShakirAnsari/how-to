@@ -125,7 +125,7 @@ uid           [ultimate] John Doe <john.doe@email.com>
 sub   rsa4096 2022-09-07 [E]
 ```
 
-and we will push it to public server
+and we will distribute our Public Key it to public server
 
 ```
 gpg --keyserver https://pgp.mit.edu --send-keys <YOUR-KEY>
