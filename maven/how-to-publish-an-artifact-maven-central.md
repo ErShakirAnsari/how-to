@@ -334,6 +334,4 @@ When maven-gpg-plugin will start its execution, it will ask you password, (one w
 ```
 mvn clean package deploy -Dmaven.test.skip=true -P<profile> 
 ```
-
-if nothing goes wrong your build will be created and pushed to maven central  
-it may take 8-10 hrs to go live. 
+After you successfully release, your component will be available to the public on [Central](https://repo1.maven.org/maven2/), typically within 30 minutes, though updates to [maven-search](https://search.maven.org) can take up to four hours.
