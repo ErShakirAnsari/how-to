@@ -259,11 +259,11 @@ You need to some metadata. You can read more here [sonatype requirements](https:
     
     <distributionManagement>
         <snapshotRepository>
-            <id>ossrh-jaxer-in</id>
+            <id>ossrh</id>
             <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
         </snapshotRepository>
         <repository>
-            <id>ossrh-jaxer-in</id>
+            <id>ossrh</id>
             <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
         </repository>
     </distributionManagement>
