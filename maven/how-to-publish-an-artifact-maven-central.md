@@ -299,6 +299,26 @@ You need to some metadata. You can read more here [sonatype requirements](https:
 </project>
 ```
 
+### 3.3) Maven settings
+Now we need to add a server in settings.xml file
+
+> 💡 file will be available in ${maven-directory}/conf/settings.xml
+
+```
+...
+    <servers>
+        ...
+        <server>
+            <id>ossrh</id>
+            <username>repouser</username>
+            <password>repopwd</password>
+        </server>
+        ...
+    </servers>
+...
+```
+
+
 ## 4) Deployment
 
 💡 Before pushing it just make sure your build is generating without fail.
