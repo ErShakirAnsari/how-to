@@ -146,7 +146,7 @@ You can read more detailed instructions on [the sonatype page on pgp signatures]
 
 ### 2.3) Export private key
 
-💡 We to add private key to GitHub to work with github-actions, if you're not planning to use gh-action you can skip this step.
+> 💡 We to add private key to GitHub to work with github-actions, if you're not planning to use gh-action you can skip this step.
 
 ```
 gpg --export-secret-keys -a 7W1S1S7SDSSS73S4DDFD4D5DCD7D2D8D3DDC5D2D > file-name.txt
@@ -318,10 +318,9 @@ Now we need to add a server in settings.xml file
 ...
 ```
 
-
 ## 4) Deployment
 
-💡 Before pushing it just make sure your build is generating without fail.
+> 💡 Before pushing it just make sure your build is generating without fail.
 
 ```
 mvn clean package
@@ -335,3 +334,5 @@ When maven-gpg-plugin will start its execution, it will ask you password, (one w
 mvn clean package deploy -Dmaven.test.skip=true -P<profile> 
 ```
 After you successfully release, your component will be available to the public on [Central](https://repo1.maven.org/maven2/), typically within 30 minutes, though updates to [maven-search](https://search.maven.org) can take up to four hours.
+
+### 4.2) Auto deploy via GitHub action
