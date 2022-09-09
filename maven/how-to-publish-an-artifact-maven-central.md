@@ -310,8 +310,8 @@ Now we need to add a server in settings.xml file
         ...
         <server>
             <id>ossrh</id>
-            <username>repouser</username>
-            <password>repopwd</password>
+            <username>JIRA-USERNAME</username>
+            <password>JIRA-PASSWORD</password>
         </server>
         ...
     </servers>
