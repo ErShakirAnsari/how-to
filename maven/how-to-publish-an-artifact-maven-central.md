@@ -125,6 +125,12 @@ uid           [ultimate] John Doe <john.doe@email.com>
 sub   rsa4096 2022-09-07 [E]
 ```
 
+and we will push it to public server
+
+```
+gpg --keyserver https://pgp.mit.edu --send-keys <YOUR-KEY>
+```
+
 ```
 C:\Users>gpg --keyserver https://pgp.mit.edu --send-keys 7W1S1S7SDSSS73S4DDFD4D5DCD7D2D8D3DDC5D2D
 gpg: sending key CS7E2SS53S3CSS2E to https://pgp.mit.edu
@@ -149,6 +155,7 @@ gpg --export-secret-keys -a 7W1S1S7SDSSS73S4DDFD4D5DCD7D2D8D3DDC5D2D > file-name
 ## 3 Changes in pom.xml
 
 ### 3.1) Plugins
+
 You need to add a few plugins as mention below:
 
 ```
@@ -238,6 +245,7 @@ You need to add a few plugins as mention below:
 ```
 
 ### 3.2) Metadata
+
 You need to some metadata. You can read more here [sonatype requirements](https://central.sonatype.org/publish/requirements/)
 
 ```
@@ -291,13 +299,17 @@ You need to some metadata. You can read more here [sonatype requirements](https:
 ```
 
 ## 4) Deployment
-💡 Before pushing it just make sure your build is generating without fail. 
+
+💡 Before pushing it just make sure your build is generating without fail.
+
 ```
 mvn clean package
 ```
 
 ### 4.1) Manual deploy
+
 When maven-gpg-plugin will start its execution, it will ask you password, (one we provided when creating key)
+
 ```
 mvn clean package deploy -Dmaven.test.skip=true -P<profile> 
 ```
