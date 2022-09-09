@@ -1,4 +1,4 @@
-# how-to
+# How to ❓
 
 ## Git
 - [useful commands](./git/commands.md)
