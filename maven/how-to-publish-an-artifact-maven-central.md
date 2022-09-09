@@ -229,8 +229,9 @@ You need to add a few plugins as mention below:
 ```
 
 ```
-<!-- https://mvnrepository.com/artifact/org.sonatype.plugins/nexus-staging-maven-plugin -->
+<!-- nexus-staging-maven-plugin -->
 <plugin>
+    <!-- https://mvnrepository.com/artifact/org.sonatype.plugins/nexus-staging-maven-plugin -->
     <groupId>org.sonatype.plugins</groupId>
     <artifactId>nexus-staging-maven-plugin</artifactId>
     <version>1.6.7</version>
