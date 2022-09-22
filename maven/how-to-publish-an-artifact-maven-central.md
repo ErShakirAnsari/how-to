@@ -137,10 +137,11 @@ gpg: sending key CS7E2SS53S3CSS2E to https://pgp.mit.edu
 ```
 
 **Some popular key servers**  
-[https://pgp.key-server.io/](https://pgp.key-server.io/)  
-[https://keyserver.ubuntu.com/](https://keyserver.ubuntu.com/)  
-[https://pgp.mit.edu/](https://pgp.mit.edu/)  
-[http://keys.gnupg.net/](http://keys.gnupg.net/)
+[https://pgp.key-server.io](https://pgp.key-server.io)  
+[https://keyserver.ubuntu.com](https://keyserver.ubuntu.com)  
+[https://pgp.mit.edu](https://pgp.mit.edu)  
+[http://keys.gnupg.net](http://keys.gnupg.net)  
+[https://keys.openpgp.org](https://keys.openpgp.org)
 
 You can read more detailed instructions on [the sonatype page on pgp signatures](https://central.sonatype.org/publish/requirements/gpg/).
 
