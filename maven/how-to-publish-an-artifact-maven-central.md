@@ -175,8 +175,8 @@ You need to add a few plugins as mention below:
             </goals>
             <configuration>
                 <!-- 
-                    Prevent `gpg` from using pinentry programs, 
-                    only use for GitHub action, 
+                    Prevent `gpg` from using pinentry programs,
+                    for non interactive mode such as CICD ie. GitHub action, 
                     remove <gpgArguments> tag for manual deploy
                  -->
                 <gpgArguments>
