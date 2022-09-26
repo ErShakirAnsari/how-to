@@ -15,5 +15,5 @@ mvn clean install -Dmaven.test.skip=true
 #### How to release without scm commit?
 
 ```
-release:prepare -DpushChanges=false -f pom.xml
+mvn release:prepare -DpushChanges=false -f pom.xml
 ```
