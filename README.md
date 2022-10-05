@@ -1,5 +1,8 @@
 # How to 😕
 
+## Android
+- [how-to-debug-in-android-studio-using-adb-over-wifi](./android/how-to-debug-in-android-studio-using-adb-over-wifi.md)
+
 ## Git
 - [useful commands](./git/commands.md)
 
