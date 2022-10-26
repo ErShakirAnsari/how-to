@@ -152,16 +152,36 @@ Copy your GPG key, beginning with `-----BEGIN PGP PUBLIC KEY BLOCK----- and endi
 
 ### 5) Increase cache time for gpg passphrase
 
-open file `C:\Users\user\.gnupg\gpg-agent.conf` and change below values:  
+open file below file and change cache values:  
 💡 don't forget to backup just in case.
 
+linux: `user-home/.gnupg/gpg-agent.conf`  
+windows: `C:\Users\user\Appdata\Roaming\gnupg\gpg-agent.conf`
+
 ```
-default-cache-ttl 34560000
-maximum-cache-ttl 34560000
+default-cache-ttl 86400
+maximum-cache-ttl 86400
 ```
 
-and Restart gpg-agent using
+and Reload gpg-agent using
+
+```
+gpgconf --reload gpg-agent
+```
+
+in case reload doesn't work
 
 ```
 gpgconf --kill gpg-agent
 ```
+
+#### 5.1) Use Kleopatra to change cache time.
+The simplest way to change the value with Gpg4win and check that it was really set is by using Kleopatra:  
+`Settings -> Configure Kleopatra -> GnuPG System -> Private Keys`
+
+There you can view the settings of and change:  
+`expire cached PINs after N seconds`  
+`set maximum PIN cache lifetime to N seconds `
+
+![](../../images/gpg-kleopatra-settings.png)
+[stackoverflow-reference](https://stackoverflow.com/a/49422432/7418534)  
