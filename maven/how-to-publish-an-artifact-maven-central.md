@@ -159,7 +159,7 @@ OR
 gpg --armor --export 7W1S1S7SDSSS73S4DDFD4D5DCD7D2D8D3DDC5D2D
 ```
 Prints the GPG key ID, in ASCII armor format.  
-Copy your GPG key, beginning with `-----BEGIN PGP PUBLIC KEY BLOCK----- and ending with -----END PGP PUBLIC KEY BLOCK-----`.
+Copy your GPG key, beginning with `-----BEGIN PGP PUBLIC KEY BLOCK----- and ending with -----END PGP PUBLIC KEY BLOCK-----`
 
 
 ## 3 Changes in pom.xml
