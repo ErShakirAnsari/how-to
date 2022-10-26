@@ -183,5 +183,5 @@ There you can view the settings of and change:
 `expire cached PINs after N seconds`  
 `set maximum PIN cache lifetime to N seconds `
 
-![](../../images/gpg-kleopatra-settings.png)
+![](../../images/gpg-kleopatra-settings.png)  
 [stackoverflow-reference](https://stackoverflow.com/a/49422432/7418534)  
