@@ -133,22 +133,29 @@ gpg: sending key CS7E2SS53S3CSS2E to https://pgp.mit.edu
 
 You can read more detailed instructions on [the sonatype page on pgp signatures](https://central.sonatype.org/publish/requirements/gpg/).
 
-### 4) Export private key
+---
+
+### 4) Export private/public key
+
+#### Export private key
 
 > 💡 We to add private key to GitHub to work with github-actions, if you're not planning to use gh-action you can skip this step.
 
 ```
-gpg --export-secret-keys -a 7W1S1S7SDSSS73S4DDFD4D5DCD7D2D8D3DDC5D2D > file-name.txt
+gpg --export-secret-keys 7W1S1S7SDSSS73S4DDFD4D5DCD7D2D8D3DDC5D2D > private.key
 ```
 
-OR
+#### Export public key
 
+add `-a` switch in above command to export public key
 ```
-gpg --armor --export 7W1S1S7SDSSS73S4DDFD4D5DCD7D2D8D3DDC5D2D
+gpg --export-secret-keys -a 7W1S1S7SDSSS73S4DDFD4D5DCD7D2D8D3DDC5D2D > public.txt
 ```
 
 Prints the GPG key ID, in ASCII armor format.  
 Copy your GPG key, beginning with `-----BEGIN PGP PUBLIC KEY BLOCK----- and ending with -----END PGP PUBLIC KEY BLOCK-----`.
+
+---
 
 ### 5) Increase cache time for gpg passphrase
 
@@ -176,6 +183,7 @@ gpgconf --kill gpg-agent
 ```
 
 #### 5.1) Use Kleopatra to change cache time.
+
 The simplest way to change the value with Gpg4win and check that it was really set is by using Kleopatra:  
 `Settings -> Configure Kleopatra -> GnuPG System -> Private Keys`
 
