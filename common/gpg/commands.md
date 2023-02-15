@@ -139,8 +139,6 @@ You can read more detailed instructions on [the sonatype page on pgp signatures]
 
 #### Export private key
 
-> 💡 We to add private key to GitHub to work with github-actions, if you're not planning to use gh-action you can skip this step.
-
 ```
 gpg --export-secret-keys 7W1S1S7SDSSS73S4DDFD4D5DCD7D2D8D3DDC5D2D > private.key
 ```
