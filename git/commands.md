@@ -6,6 +6,12 @@
 git tag
 ```
 
+#### Create a tag later by using commit checksum
+
+```
+git tag -a v1.2 9fceb02
+```
+
 #### Delete local tag
 
 ```
