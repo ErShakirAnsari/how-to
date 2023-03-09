@@ -12,6 +12,12 @@ git tag
 git tag -a v1.2 9fceb02
 ```
 
+#### Push to remote repo
+
+```
+git push origin v0.0.0
+```
+
 #### Delete local tag
 
 ```
