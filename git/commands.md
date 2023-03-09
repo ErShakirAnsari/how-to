@@ -1,5 +1,11 @@
 # Some useful git commands
 
+#### List all commits
+
+```
+git log --pretty=oneline
+```
+
 #### List all tags
 
 ```
