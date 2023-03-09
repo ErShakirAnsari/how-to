@@ -18,6 +18,11 @@ git tag
 git tag -a v1.2 9fceb02
 ```
 
+if you want sign it
+```
+git tag -as v1.2 9fceb02
+```
+
 #### Push to remote repo
 
 ```
