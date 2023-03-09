@@ -1,5 +1,11 @@
 # Some useful git commands
 
+#### List all tags
+
+```
+git tag
+```
+
 #### Delete local tag
 
 ```
