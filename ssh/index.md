@@ -6,6 +6,6 @@ Add below lines in `~/ssh/.config` file
 
 ```
 Host *
-ServerAliveInterval 20
-TCPKeepAlive no
+    ServerAliveInterval 20
+    TCPKeepAlive no
 ```
