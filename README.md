@@ -2,7 +2,7 @@
 
 ## Common
 
-- [gpg](common/gpg/commands.md)
+- [gpg](gpg/commands.md)
 
 ## Android
 
@@ -10,7 +10,7 @@
 
 ## Git
 
-- [useful commands](./git/commands.md)
+- [useful commands](./git/index.md)
 
 ## Linux 🐧
 
