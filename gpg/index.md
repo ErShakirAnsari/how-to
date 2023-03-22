@@ -2,7 +2,7 @@
 
 First thing first, you need to install a gpg tool to sing your artifacts,
 you can download this tool from [gnupg.org](https://gnupg.org/download/index.html)
-or use my [offline copy](../assets/binaries/gpg4win-4.0.3.exe)
+or use my offline copy [gpg4win-4.0.3.exe](../assets/binaries/gpg4win-4.0.3.exe)
 
 Once installation is complete, open your terminal and follow below commands
 
