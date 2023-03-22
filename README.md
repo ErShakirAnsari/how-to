@@ -1,9 +1,5 @@
 # How to 😕
 
-## Common
-
-- [gpg](gpg/index.md)
-
 ## Android
 
 - [how-to-debug-in-android-studio-using-adb-over-wifi](./android/how-to-debug-in-android-studio-using-adb-over-wifi.md)
@@ -11,6 +7,11 @@
 ## Git
 
 - [useful commands](./git/index.md)
+
+## GPG
+
+- [common](gpg/index.md)
+- [sign-commit-with-gpg.md](gpg/sign-commit-with-gpg.md)
 
 ## Linux 🐧
 
