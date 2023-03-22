@@ -12,7 +12,7 @@ You can also clone, edit and submit the Jira ticket I created - [OSSRH-83824](ht
 
 ## 2) GPG setup and Signing Artifacts
 
-Checkout this [article](../common/gpg/commands.md)
+Checkout this [article](../gpg/commands.md)
 
 ## 3 Changes in pom.xml
 
