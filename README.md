@@ -2,7 +2,7 @@
 
 ## Common
 
-- [gpg](gpg/commands.md)
+- [gpg](gpg/index.md)
 
 ## Android
 
@@ -14,11 +14,11 @@
 
 ## Linux 🐧
 
-- [useful commands](./linux/common.md)
+- [useful commands](./linux/index.md)
 
 ## Maven
 
-- [useful commands](./maven/commands.md)
+- [useful commands](./maven/index.md)
 - [how-to-publish-an-artifact-maven-central](./maven/how-to-publish-an-artifact-maven-central.md)
 
 ## SSH
