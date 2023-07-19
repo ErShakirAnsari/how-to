@@ -17,3 +17,9 @@ mvn clean install -Dmaven.test.skip=true
 ```
 mvn release:prepare -DpushChanges=false -f pom.xml
 ```
+
+#### How to updating version numbers in a multi module project?
+
+```
+mvn versions:set -DnewVersion=2.50.1-SNAPSHOT
+```
