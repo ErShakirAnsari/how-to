@@ -16,6 +16,7 @@
 ## Linux 🐧
 
 - [useful commands](./linux/index.md)
+- [linux services](./linux/services/index.md)
 
 ## Maven
 
