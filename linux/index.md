@@ -1,7 +1,5 @@
 # Some useful LINUX commands
 
-👉 [Services](./services/index.md)
-
 #### updateall
 
 ```
