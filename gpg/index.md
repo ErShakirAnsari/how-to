@@ -93,7 +93,8 @@ sub   rsa4096 2022-09-07 [E]
 
 ### 3) Publish key
 
-Once the keys are created, you need to sync the public keys with popular gpg key servers. You can synchronize the keys by retrieving the public key and then sending it to the
+Once the keys are created, you need to sync the public keys with popular gpg key servers. You can synchronize the keys
+by retrieving the public key and then sending it to the
 key-servers.
 
 ```
@@ -131,7 +132,8 @@ gpg: sending key CS7E2SS53S3CSS2E to https://pgp.mit.edu
 [http://keys.gnupg.net](http://keys.gnupg.net)  
 [https://keys.openpgp.org](https://keys.openpgp.org)
 
-You can read more detailed instructions on [the sonatype page on pgp signatures](https://central.sonatype.org/publish/requirements/gpg/).
+You can read more detailed instructions
+on [the sonatype page on pgp signatures](https://central.sonatype.org/publish/requirements/gpg/).
 
 ---
 
@@ -143,15 +145,23 @@ You can read more detailed instructions on [the sonatype page on pgp signatures]
 gpg --export-secret-keys 7W1S1S7SDSSS73S4DDFD4D5DCD7D2D8D3DDC5D2D > private.key
 ```
 
+#### Display private key
+
+```
+gpg --list-secret-keys --keyid-format=long
+```
+
 #### Export public key
 
 add `-a` switch in above command to export public key
+
 ```
 gpg --export-secret-keys -a 7W1S1S7SDSSS73S4DDFD4D5DCD7D2D8D3DDC5D2D > public.txt
 ```
 
 Prints the GPG key ID, in ASCII armor format.  
-Copy your GPG key, beginning with `-----BEGIN PGP PUBLIC KEY BLOCK----- and ending with -----END PGP PUBLIC KEY BLOCK-----`.
+Copy your GPG key, beginning
+with `-----BEGIN PGP PUBLIC KEY BLOCK----- and ending with -----END PGP PUBLIC KEY BLOCK-----`.
 
 ---
 
