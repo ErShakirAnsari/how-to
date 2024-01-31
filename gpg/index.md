@@ -156,7 +156,13 @@ gpg --list-secret-keys --keyid-format=long
 add `-a` switch in above command to export public key
 
 ```
-gpg --export-secret-keys -a 7W1S1S7SDSSS73S4DDFD4D5DCD7D2D8D3DDC5D2D > public.txt
+gpg --export -a B29E44414D3DAF21C518F3F3785620A27BAD3D80 > public2.txt
+```
+
+#### Export private key
+
+```
+gpg --export-secret-keys -a 7W1S1S7SDSSS73S4DDFD4D5DCD7D2D8D3DDC5D2D > private.txt
 ```
 
 Prints the GPG key ID, in ASCII armor format.  
