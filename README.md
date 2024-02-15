@@ -4,25 +4,22 @@
 
 - [how-to-debug-in-android-studio-using-adb-over-wifi](./android/how-to-debug-in-android-studio-using-adb-over-wifi.md)
 
-## Git
+## [Git](./git/index.md)
 
-- [useful commands](./git/index.md)
+## [GPG](gpg/index.md)
 
-## GPG
-
-- [common](gpg/index.md)
 - [sign-commit-with-gpg.md](gpg/sign-commit-with-gpg.md)
 
-## Linux 🐧
+## [Linux 🐧](./linux/index.md)
 
-- [useful commands](./linux/index.md)
 - [linux services](./linux/services/index.md)
 
-## Maven
+## [Maven](./maven/index.md)
 
-- [useful commands](./maven/index.md)
 - [how-to-publish-an-artifact-maven-central](./maven/how-to-publish-an-artifact-maven-central.md)
 
-## SSH
+## [Redis](./redis/index.md)
 
-- [common ssh command](./ssh/index.md)
+- [How to set max memory](./redis/how-to-set-max-memory.md)
+
+## [SSH](./ssh/index.md)
