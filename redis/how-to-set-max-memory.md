@@ -7,12 +7,22 @@ maxmemory 128mb
 maxmemory-policy allkeys-lru
 ```
 
-OR
+Note on units: when memory size is needed, it is possible to specify  
+it in the usual form of 1k 5GB 4M and so forth:
 
-```
-maxmemory 6gb
-maxmemory-policy allkeys-lru
-```
+| unit | = | value                    |
+|------|---|--------------------------|
+| 1k   | = | 1000 bytes               |
+| 1kb  | = | 1024 bytes               |
+| 1m   | = | 1000000 bytes            |  
+| 1mb  | = | 1024*1024 bytes          |
+| 1g   | = | 1000000000 bytes         |
+| 1gb  | = | 1024 * 1024 * 1024 bytes |
+
+__Units are case insensitive so 1GB 1Gb 1gB are all the same.__
+
+> LRU means __Least Recently Used__  
+> LFU means __Least Frequently Used__
 
 #### Step2 ➖ Add an include tag in /etc/redis/redis.conf file
 
@@ -38,3 +48,7 @@ OR
  sudo systemctl restart redis-server
 ```
 
+### 🔗 Reference
+
+- [Redis Docs](https://redis.io/docs/management/config-file/)
+- [stackoverflow](https://stackoverflow.com/a/59465061/7418534)
