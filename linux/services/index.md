@@ -1,11 +1,17 @@
 # Services
 
-### How to enable a service so it can be auto start on system reboot;
+### How to enable/disable a service, so it can be auto start on system reboot;
 
-**1) Enable the service**
+**1) Enable/Disable the service**
 
 ```
 sudo systemctl enable httpd
+```
+
+OR
+
+```
+sudo systemctl disable httpd
 ```
 
 **2) Reload the demon**
@@ -14,16 +20,10 @@ sudo systemctl enable httpd
 sudo systemctl daemon-reload
 ```
 
-**3) Start the service**
-
-```
-sudo systemctl start httpd
-```
-
 **3) Check the status**
 
 ```
-sudo systemctl status httpd
+sudo systemctl is-enabled httpd
 ```
 
 [Referenece](https://serverfault.com/a/861935)
