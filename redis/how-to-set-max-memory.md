@@ -7,8 +7,12 @@ maxmemory 128mb
 maxmemory-policy allkeys-lru
 ```
 
-Note on units: when memory size is needed, it is possible to specify  
-it in the usual form of 1k 5GB 4M and so forth:
+💡 Notes
+
+- /home/user/file.conf may not work, try put it into different folder.
+
+- Units: when memory size is needed, it is possible to specify  
+  it in the usual form of 1k 5GB 4M and so forth:
 
 | unit | = | value                    |
 |------|---|--------------------------|
