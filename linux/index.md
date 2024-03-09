@@ -11,3 +11,18 @@ and then reload
 ```
 source ~/.bashrc
 ```
+
+### nano
+
+Edit below file
+
+```
+nano ~/.nanorc
+```
+
+Add below lines
+
+```
+set tabsize 4
+set linenumbers
+```
