@@ -22,4 +22,6 @@
 
 - [How to set max memory](./redis/how-to-set-max-memory.md)
 
+## [SQL](./sql/index.md)
+
 ## [SSH](./ssh/index.md)
